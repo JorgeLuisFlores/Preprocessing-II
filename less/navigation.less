@@ -1,1 +1,38 @@
 // Navigation Styles here
+@topmargin: 2%;
+
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+        .nav-bartext {
+            margin-right: 23%;
+            margin-top: @topmargin;
+        }
+
+        .nav-barcontent {
+            color: @shark;
+            font-size: 2rem;
+            padding: 10px;
+            margin-top: @topmargin;
+
+        }
+
+        @media @mobile {
+            flex-wrap: wrap;
+            
+            .nav-bartext {
+                margin-left: 33%;
+                width: 100%;
+                margin-bottom: 3%;
+            }
+
+            .nav-barcontent {
+                margin-right: 3%;
+            }
+        }
+    
+}

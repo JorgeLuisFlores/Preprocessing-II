@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed @silver;
   background: @sandy-beach;
   
   p {
@@ -8,5 +8,10 @@
     color: @font-color;
     font-size: 1.6rem;
     padding: 20px;
+
+                @media @mobile {
+                  width: 80%;
+                  margin-left: 4%;
+                }
   }
 }
